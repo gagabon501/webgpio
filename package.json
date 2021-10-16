@@ -1,0 +1,22 @@
+{
+  "name": "garage_door_control_app",
+  "version": "2.0.0",
+  "description": "Node.js implementation of controlling Raspberry Pi GPIO",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.7.4",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "rpi-gpio": "^2.1.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}
