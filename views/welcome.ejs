@@ -43,7 +43,7 @@
       function checkStatus() {
         const xhr = new XMLHttpRequest();
         xhr.open("GET", "/status", true);
-        xhr.onload = () => {
+        xhr.onload = function () {
           if (this.status == 200) {
             const doorStatus = JSON.parse(this.responseText);
             console.log(doorStatus);
@@ -55,7 +55,9 @@
           }
         };
 
-        xhr.onerror = () => console.log("Request Error...");
+        xhr.onerror = function () {
+			console.log("Request Error...")
+			};
 
         xhr.send();
       }
