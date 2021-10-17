@@ -1,3 +1,4 @@
 exports.checkStatus = function (req, res) {
-  res.redirect("/");
+  if (!req.session.authenticated) return res.redirect("/logout");
+  res.redirect("/home");
 };
