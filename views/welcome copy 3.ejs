@@ -3,24 +3,45 @@
   <% include ./partials/layout %>
   <body onload="JavaScript:checkStatus();">
     <div class="row mt-5">
-      <div class="col-md-3 m-auto text-center">
+      <div class="col-md-3 m-auto">
         <div
           id="bgclass"
           class="card card-body text-center door_opening_closing text-white"
         >
-          <h4 id="door_status">Welcome</h4>
-          <a href="/operate">
           <img
             src="images/Garage Opener-logos_white.png"
             alt="Garage Opener"
             width="300"
             height="300"
-          /></a>
-          <h4><a href="/logout"><i class="fas fa-sign-out-alt fa-2x"></i></h4></a>
+          />
+          <h4 id="door_status">Welcome</h4>
+          <div class="row mt-5">
+            <div class="card card-body">
+              <a
+                id="btnlabel"
+                href="/operate"
+                type="button"
+                class="btn btn-outline-primary mb-2"
+              >
+                Operate
+              </a>
+              <a
+                id="btnlabel"
+                href="/checkStatus"
+                type="button"
+                class="btn btn-outline-info mb-2"
+              >
+                Status
+              </a>
+              <a href="/logout" type="button" class="btn btn-outline-danger">
+                Logout
+              </a>
+            </div>
+          </div>
+          <a class="footer text-white" href="mailto:gagabon@safenode.co.nz"
+            >&copy 2021 Nodesafe Ltd | gagabon@safenode.co.nz</a
+          >
         </div>
-        <a class="footer" href="mailto:gagabon@safenode.co.nz"
-          >&copy 2021 Nodesafe Ltd | gagabon@safenode.co.nz</a
-        >
       </div>
     </div>
 
