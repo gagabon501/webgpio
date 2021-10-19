@@ -6,13 +6,28 @@
       <div class="col-md-3 m-auto">
         <div class="card card-body text-center">
           <div>
-          <img
-            src="images/Garage Opener-logos_black.png"
-            alt="Garage Opener"
-            width="300"
-            height="300"
-          />
-          
+            <img
+              src="images/Garage Opener-logos_black.png"
+              alt="Garage Opener"
+              width="300"
+              height="300"
+            />
+            <% if(error_msg != ''){ %>
+            <div
+              class="alert alert-danger alert-dismissible fade show"
+              role="alert"
+            >
+              <%= error_msg %>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="alert"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <% } %>
             <form action="/login" method="POST">
               <div class="form-group">
                 <input
@@ -26,11 +41,12 @@
               <button type="submit" class="btn btn-primary btn-block">
                 Login
               </button>
-
             </form>
-            <p><%= error_msg %></p>
+
             <a class="footer" href="mailto:gagabon@safenode.co.nz"
-                >&copy 2021 Nodesafe Ltd | gagabon@safenode.co.nz</a>
+              >&copy 2021 Nodesafe Ltd | gagabon@safenode.co.nz</a
+            >
+          </div>
         </div>
       </div>
     </div>

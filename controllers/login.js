@@ -3,8 +3,7 @@ const appLogger = require("./logger");
 // Login GET route
 exports.login_get = (req, res, next) => {
   return res.render("login", {
-    title: "Login",
-    error_msg: req.flash("error_msg"), //get data from the global variable locals.error_msg
+    error_msg: req.flash("error_msg"), //get data from the flash variable (error_msg) that was set in the "/login" POST route
   });
 };
 
@@ -18,7 +17,9 @@ exports.login_post = (req, res, next) => {
     appLogger.error(
       `Invalid password: client ip: ${req.connection.remoteAddress} - password: ${req.body.password}`
     );
-    req.flash("error_msg", "Invalid password"); //fill-in the global variable locals.error_msg: res.locals.error_msg = req.flash("error_msg");
+    //NOTES: if not for flash() you would have to re-render the login.ejs screen so as to provide a feedback to the user that password entered was
+    //       incorrect. Here because of flash(), I just needed to call a "redirect("/login") and set the "error_msg" variable with flash()
+    req.flash("error_msg", "Invalid password"); //fill-in the flash variable (error_msg) so it is made available in the "/login" GET route
     res.redirect("/login");
   }
 };
