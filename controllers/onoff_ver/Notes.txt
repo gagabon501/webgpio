@@ -1,1 +1,0 @@
-14-Oct-21: Did not pursue to use this module as this causes resource buy errors.. hence I reverted back to rpi-gpio module

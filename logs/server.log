@@ -1,0 +1,78 @@
+error: Oct-18-2021 22:33:49: 	Server error: Invalid password
+error: Oct-18-2021 22:36:30: 	Server error: Invalid password
+error: Oct-18-2021 22:38:36: 	Server error: Invalid password
+error: Oct-18-2021 22:40:36: 	Server error: Invalid password
+error: Oct-18-2021 22:40:54: 	Server error: Invalid password
+error: Oct-18-2021 22:42:54: 	Server error: Invalid password
+error: Oct-18-2021 22:50:10: 	Server error: Cannot read property 'address' of undefined
+error: Oct-18-2021 22:57:16: 	Server error: Invalid password
+error: Oct-18-2021 22:59:16: 	Server error: Invalid password
+error: Oct-18-2021 23:16:07: 	Server error: Cannot create property 'Symbol(level)' on string 'client ip: ::ffff:192.168.1.21 - password: abcd123'
+error: Oct-18-2021 23:18:32: 	client ip: ::ffff:192.168.1.21 - password: abcd123
+error: Oct-18-2021 23:18:32: 	Server error: Invalid password
+error: Oct-18-2021 23:21:15: 	Server error: Invalid password: client ip: ::ffff:192.168.1.21 - password: abcd123
+error: Oct-19-2021 00:02:53: 	Server error: Invalid password: client ip: ::ffff:192.168.1.21 - password: abcd123
+error: Oct-19-2021 00:05:18: 	Server error: Invalid password: client ip: ::ffff:192.168.1.21 - password: abcd123
+error: Oct-19-2021 00:08:03: 	Server error: Invalid password: client ip: ::ffff:192.168.1.21 - password: abcd123
+error: Oct-19-2021 00:09:56: 	400 || undefined - /login - POST - ::ffff:192.168.1.21
+error: Oct-19-2021 00:09:56: 	Server error: Invalid password: client ip: ::ffff:192.168.1.21 - password: abcd123
+error: Oct-19-2021 00:11:34: 	400 || undefined - /login - POST - ::ffff:192.168.1.21
+error: Oct-19-2021 00:11:34: 	Server error: Invalid password: client ip: ::ffff:192.168.1.21 - password: abcd123
+error: Oct-19-2021 00:13:43: 	400 || undefined - /login - POST - ::ffff:192.168.1.21
+error: Oct-19-2021 00:13:43: 	Server error: Invalid password: client ip: ::ffff:192.168.1.21 - password: abcd123
+error: Oct-19-2021 00:18:58: 	400 || undefined - /login - POST - ::ffff:192.168.1.21
+error: Oct-19-2021 00:18:58: 	Server error: Invalid password: client ip: ::ffff:192.168.1.21 - password: abcd123
+error: Oct-19-2021 04:09:39: 	400 || undefined - /login - GET - ::ffff:192.168.1.21
+error: Oct-19-2021 04:09:39: 	Server error: locals is not defined
+error: Oct-19-2021 04:09:57: 	400 || undefined - /login - GET - ::ffff:192.168.1.21
+error: Oct-19-2021 04:09:57: 	Server error: locals is not defined
+error: Oct-19-2021 04:14:31: 	400 || undefined - /login - GET - ::ffff:192.168.1.21
+error: Oct-19-2021 04:14:31: 	Server error: /home/pi/webgpio/views/login.ejs:15
+    13|             height="300"
+    14|           />
+ >> 15|           <% include ./partials/messages %>
+    16|             <form action="/login" method="POST">
+    17|               <div class="form-group">
+    18|                 <input
+
+/home/pi/webgpio/views/partials/messages.ejs:1
+ >> 1| <% if(locals.errors){ %> <% errors.forEach(function(error) { %>
+    2| <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    3|   <%= error.msg %>
+    4|   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+
+success_msg is not defined
+error: Oct-19-2021 04:18:14: 	Server error: /home/pi/webgpio/views/login.ejs:15
+    13|             height="300"
+    14|           />
+ >> 15|           <% include ./partials/messages %>
+    16|             <form action="/login" method="POST">
+    17|               <div class="form-group">
+    18|                 <input
+
+/home/pi/webgpio/views/partials/messages.ejs:1
+ >> 1| <% if(success_msg != ''){ %>
+    2|   <div class="alert alert-success alert-dismissible fade show" role="alert">
+    3|     <%= success_msg %>
+    4|     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+
+success_msg is not defined
+error: Oct-19-2021 04:18:47: 	Server error: /home/pi/webgpio/views/login.ejs:15
+    13|             height="300"
+    14|           />
+ >> 15|           <% include ./partials/messages %>
+    16|             <form action="/login" method="POST">
+    17|               <div class="form-group">
+    18|                 <input
+
+/home/pi/webgpio/views/partials/messages.ejs:1
+ >> 1| <% if(success_msg != ''){ %>
+    2|   <div class="alert alert-success alert-dismissible fade show" role="alert">
+    3|     <%= success_msg %>
+    4|     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+
+success_msg is not defined
+error: Oct-19-2021 04:24:17: 	Invalid password: client ip: ::ffff:192.168.1.21 - password: abcd123
+error: Oct-19-2021 04:24:58: 	Invalid password: client ip: ::ffff:192.168.1.21 - password: abcd123
+error: Oct-19-2021 04:25:09: 	Invalid password: client ip: ::ffff:192.168.1.21 - password: MyGil50128
+error: Oct-19-2021 04:25:23: 	Invalid password: client ip: ::ffff:192.168.1.21 - password: Wakoy?1299
