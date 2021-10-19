@@ -1,7 +1,7 @@
 const gpio = require("rpi-gpio").promise;
 const appLogger = require("./logger"); //using winston
 
-exports.garageStatus = function (req, res) {
+exports.garageStatus = async (req, res) => {
   if (!req.session.authenticated) return res.redirect("/logout");
   const SENSOR1_PIN16 = 16;
   const SENSOR2_PIN18 = 18;

@@ -1,13 +1,23 @@
+require("express-async-errors");
 const express = require("express");
 const accessLogger = require("morgan");
-const appLogger = require("./controllers/logger"); //using winston
 const path = require("path");
 const rfs = require("rotating-file-stream"); // version 2.x
+const appLogger = require("./controllers/logger"); //using winston
 const error = require("./middleware/error");
 const flash = require("connect-flash");
 require("dotenv").config();
 
 const app = express();
+
+//handles uncaught exception errors  --> this is now being handled by winston (refer to logger.js)
+// process.on("uncaughtException", (err) => {
+//   appLogger.error(err.message, err);
+// });
+
+// process.on("unhandledRejection", (err) => { //being handled now inside winston
+//   throw err;
+// });
 
 // EJS
 app.set("view engine", "ejs");
@@ -48,13 +58,7 @@ app.use(
 // Connect flash
 app.use(flash());
 
-// Global variables
-// app.use(function (req, res, next) {
-//   res.locals.success_msg = req.flash("success_msg");
-//   res.locals.error_msg = req.flash("error_msg");
-//   res.locals.error = req.flash("error");
-//   next();
-// });
+// throw new Error("Something wrong here."); //sample to test error handler
 
 // Routes
 app.use("/", require("./routes/index.js"));
@@ -62,12 +66,9 @@ app.use("/", require("./routes/index.js"));
 //error handler middleware - should be the last to be called among all middlewares
 app.use(error);
 
-// app.use(function (err, req, res, next) {
-//   console.log(err);
-//   appLogger.error(`Server error: ${err.message}`);
-//   next;
-//   //   console.log("Error: ", err.message)
-// });
+// tested the following code with the error handler and it successfully handled error
+// const p = Promise.reject(new Error("Promise rejected"));
+// p.then(() => console.log("Done"));
 
 const PORT = process.env.PORT || 5000;
 

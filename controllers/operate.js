@@ -20,7 +20,7 @@ function writePin(err) {
   });
 }
 
-exports.operateDoor = (req, res) => {
+exports.operateDoor = async (req, res) => {
   if (!req.session.authenticated) return res.redirect("/logout");
   gpio.setup(PIN, gpio.DIR_OUT, writePin);
   res.redirect("/home");

@@ -1,14 +1,14 @@
 const appLogger = require("./logger");
 
 // Login GET route
-exports.login_get = (req, res, next) => {
+exports.login_get = async (req, res, next) => {
   return res.render("login", {
     error_msg: req.flash("error_msg"), //get data from the flash variable (error_msg) that was set in the "/login" POST route
   });
 };
 
 //Login POST route
-exports.login_post = (req, res, next) => {
+exports.login_post = async (req, res, next) => {
   if (req.body.password === process.env.PASSWD) {
     req.session.authenticated = true;
     console.log(req.session);
@@ -25,7 +25,7 @@ exports.login_post = (req, res, next) => {
 };
 
 // GET for logout logout
-exports.logout_get = (req, res, next) => {
+exports.logout_get = async (req, res, next) => {
   if (req.session) {
     // delete session object
     req.session.destroy(function (err) {

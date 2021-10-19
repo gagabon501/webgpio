@@ -1,4 +1,7 @@
+// import { createLogger, format, transports } from "winston";
+
 const { createLogger, format, transports } = require("winston");
+const { combine, timestamp, prettyPrint, colorize, errors } = format;
 
 const logConfiguration = {
   transports: [
@@ -11,15 +14,12 @@ const logConfiguration = {
     new transports.File({
       level: "error",
       filename: "logs/server.log",
-      format: format.combine(
-        format.timestamp({ format: "MMM-DD-YYYY HH:mm:ss" }),
-        format.align(),
-        format.printf(
-          (info) => `${info.level}: ${[info.timestamp]}: ${info.message}`
-        )
-      ),
+      format: combine(errors({ stack: true }), timestamp(), prettyPrint()),
     }),
   ],
+  exceptionHandlers: [new transports.File({ filename: "logs/exceptions.log" })],
+  rejectionHandlers: [new transports.File({ filename: "logs/rejections.log" })],
+  exitOnError: false,
 };
 
 module.exports = createLogger(logConfiguration);
