@@ -16,7 +16,7 @@ function writePin(err) {
     setTimeout(() => gpio.write(PIN, true), DELAY);
 
     //wait for another 2-seconds to get ready for the next operation - button push
-    setTimeout(() => appLogger.info("ready for next operation"), RESET_DELAY);
+    setTimeout(() => gpio.write(PIN, false), RESET_DELAY);
   });
 }
 

@@ -1,0 +1,5 @@
+::ffff:209.141.54.28 - - [20/Oct/2021:11:22:17 +0000] "GET / HTTP/1.1" 302 56 "-" "Chrome/54.0 (Windows NT 10.0)"
+::ffff:209.141.41.193 - - [20/Oct/2021:11:22:48 +0000] "GET /favicon.ico HTTP/1.1" 200 2441 "-" "Chrome/54.0 (Windows NT 10.0)"
+::ffff:203.97.192.59 - - [21/Oct/2021:03:19:44 +0000] "GET /images/Garage%20Opener-logos_white.png HTTP/1.1" 304 - "-" "Mozilla/4.0 (compatible;)"
+::ffff:3.80.157.163 - - [21/Oct/2021:03:22:39 +0000] "GET /images/Garage%20Opener-logos_white.png HTTP/1.1" 200 82586 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36"
+::ffff:18.206.254.191 - - [21/Oct/2021:03:22:44 +0000] "GET /images/Garage%20Opener-logos_white.png HTTP/1.1" 200 82586 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36"
