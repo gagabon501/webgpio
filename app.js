@@ -26,6 +26,20 @@ app.set("views", path.join(__dirname, "views"));
 //:remote-addr - :remote-user [:date[clf]] ":method :url HTTP/:http-version" :status :res[content-length]
 // app.use(logger("combined"));
 
+// const videoStream = require("raspberrypi-node-camera-web-streamer");
+// videoStream.acceptConnections(
+//   app,
+//   {
+//     width: 1280,
+//     height: 720,
+//     fps: 16,
+//     encoding: "JPEG",
+//     quality: 7, //lower is faster
+//   },
+//   "/stream.mjpg",
+//   true
+// );
+
 // create a rotating write stream
 var accessLogStream = rfs.createStream("access.log", {
   interval: "1d", // rotate daily

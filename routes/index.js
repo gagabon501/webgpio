@@ -5,6 +5,8 @@ const home = require("../controllers/home");
 const status = require("../controllers/status");
 const checkStatus = require("../controllers/checkStatus");
 const operate = require("../controllers/operate");
+const camera = require("../controllers/camera");
+const showCamera = require("../controllers/showCamera");
 const publicIp = require("../controllers/getPublicIp");
 const get404 = require("../controllers/get404");
 
@@ -19,6 +21,8 @@ router.get("/home", home.homePage);
 router.get("/status", status.garageStatus);
 router.get("/checkStatus", checkStatus.checkStatus);
 router.get("/operate", operate.operateDoor);
+router.get("/camera", camera.camera);
+router.get("/showCamera", showCamera.showCamera);
 router.get("/getPip", publicIp.getPublicIp);
 router.get("*", get404.get404);
 
