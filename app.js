@@ -1,3 +1,8 @@
+const fs = require("fs");
+const key = fs.readFileSync("../cert/CA/localhost/localhost.decrypted.key");
+const cert = fs.readFileSync("../cert/CA/localhost/localhost.crt");
+const https = require("https");
+const port = 5000;
 require("express-async-errors");
 const express = require("express");
 const accessLogger = require("morgan");
@@ -84,6 +89,12 @@ app.use(error);
 // const p = Promise.reject(new Error("Promise rejected"));
 // p.then(() => console.log("Done"));
 
-const PORT = process.env.PORT || 5000;
+// const PORT = process.env.PORT || 5000;
 
-app.listen(PORT, appLogger.info(`Server running on  ${PORT}`));
+// app.listen(PORT, appLogger.info(`Server running on  ${PORT}`));
+
+const PORT = process.env.PORT || port;
+const server = https.createServer({ key, cert }, app);
+server.listen(PORT, () =>
+  appLogger.info(`Server running on secure site port ${PORT}`)
+);

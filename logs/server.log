@@ -1,0 +1,203 @@
+{ message:
+   'Error at setup pin18: Error: EBUSY: resource busy or locked, write',
+  level: 'error',
+  timestamp: '2021-10-26T21:58:50.766Z' }
+{ message:
+   "Error at setup pin18: Error: EACCES: permission denied, open '/sys/class/gpio/gpio24/value'",
+  level: 'error',
+  timestamp: '2021-10-26T21:59:22.997Z' }
+{ message:
+   'Error at setup pin18: Error: EBUSY: resource busy or locked, write',
+  level: 'error',
+  timestamp: '2021-10-26T21:59:43.858Z' }
+{ message:
+   'Error at setup pin18: Error: EBUSY: resource busy or locked, write',
+  level: 'error',
+  timestamp: '2021-10-26T22:05:53.849Z' }
+{ message:
+   'Error at setup pin18: Error: EBUSY: resource busy or locked, write',
+  level: 'error',
+  timestamp: '2021-10-26T22:12:08.855Z' }
+{ message:
+   'Error at setup pin18: Error: EBUSY: resource busy or locked, write',
+  level: 'error',
+  timestamp: '2021-10-26T22:12:29.769Z' }
+{ message:
+   'Error at setup pin18: Error: EBUSY: resource busy or locked, write',
+  level: 'error',
+  timestamp: '2021-10-26T22:12:54.040Z' }
+{ message: 'Error at setup pin18: Error: ENODEV: no such device, read',
+  level: 'error',
+  timestamp: '2021-10-26T22:13:18.883Z' }
+{ message:
+   'Error at setup pin18: Error: EBUSY: resource busy or locked, write',
+  level: 'error',
+  timestamp: '2021-10-26T22:13:23.860Z' }
+{ message:
+   "Error at setup pin18: Error: EACCES: permission denied, open '/sys/class/gpio/gpio24/value'",
+  level: 'error',
+  timestamp: '2021-10-26T22:15:18.927Z' }
+{ message:
+   'Error at setup pin18: Error: EBUSY: resource busy or locked, write',
+  level: 'error',
+  timestamp: '2021-10-26T22:17:18.987Z' }
+{ message:
+   "Error at setup pin18: Error: EACCES: permission denied, open '/sys/class/gpio/gpio24/value'",
+  level: 'error',
+  timestamp: '2021-10-26T22:17:26.843Z' }
+{ message:
+   "Error at setup pin18: Error: EACCES: permission denied, open '/sys/class/gpio/gpio24/value'",
+  level: 'error',
+  timestamp: '2021-10-26T22:18:26.845Z' }
+{ message:
+   "Error at setup pin18: Error: EACCES: permission denied, open '/sys/class/gpio/gpio24/value'",
+  level: 'error',
+  timestamp: '2021-10-28T06:56:05.462Z' }
+{ message:
+   "Error at setup pin18: Error: EACCES: permission denied, open '/sys/class/gpio/gpio24/value'",
+  level: 'error',
+  timestamp: '2021-10-28T17:36:40.173Z' }
+{ message:
+   'Invalid password: client ip: ::ffff:192.168.1.1 - password: Wakoy?12998',
+  level: 'error',
+  timestamp: '2021-10-28T22:11:17.975Z' }
+{ message:
+   'Server error: Cannot set headers after they are sent to the client',
+  level: 'error',
+  timestamp: '2021-10-28T22:24:54.538Z' }
+{ message:
+   'Invalid password: client ip: ::ffff:192.168.1.1 - password: Wakoy?1198',
+  level: 'error',
+  timestamp: '2021-11-01T20:43:36.618Z' }
+{ message:
+   "Error at setup pin18: Error: EACCES: permission denied, open '/sys/class/gpio/gpio24/value'",
+  level: 'error',
+  timestamp: '2021-11-01T20:49:43.170Z' }
+{ message:
+   'Error at setup pin18: Error: EBUSY: resource busy or locked, write',
+  level: 'error',
+  timestamp: '2021-11-01T20:52:29.867Z' }
+{ message:
+   'Invalid password: client ip: ::ffff:49.224.192.61 - password: Wakoy?2301',
+  level: 'error',
+  timestamp: '2022-01-18T02:42:40.656Z' }
+{ message:
+   'Invalid password: client ip: ::ffff:49.224.192.61 - password: Soteqw',
+  level: 'error',
+  timestamp: '2022-01-18T02:42:58.822Z' }
+{ message:
+   'Invalid password: client ip: ::ffff:49.224.192.61 - password: Soteqw',
+  level: 'error',
+  timestamp: '2022-01-18T02:42:58.969Z' }
+{ message:
+   'Invalid password: client ip: ::ffff:49.224.192.61 - password: Soteqw',
+  level: 'error',
+  timestamp: '2022-01-18T02:42:59.671Z' }
+{ message:
+   'Invalid password: client ip: ::ffff:49.224.192.61 - password: Soteqw',
+  level: 'error',
+  timestamp: '2022-01-18T02:42:59.818Z' }
+{ message:
+   'Invalid password: client ip: ::ffff:49.224.192.61 - password: Soteqw',
+  level: 'error',
+  timestamp: '2022-01-18T02:42:59.964Z' }
+{ message:
+   'Invalid password: client ip: ::ffff:49.224.192.61 - password: Soteqw',
+  level: 'error',
+  timestamp: '2022-01-18T02:43:00.154Z' }
+{ message:
+   'Invalid password: client ip: ::ffff:49.224.192.61 - password: Wakoy?2301',
+  level: 'error',
+  timestamp: '2022-01-18T02:43:11.199Z' }
+{ message:
+   "Error at setup pin18: Error: EACCES: permission denied, open '/sys/class/gpio/gpio24/value'",
+  level: 'error',
+  timestamp: '2022-01-18T02:53:32.257Z' }
+{ message:
+   'Error at setup pin18: Error: EINVAL: invalid argument, write',
+  level: 'error',
+  timestamp: '2022-01-18T03:02:10.402Z' }
+{ message:
+   'Error at setup pin18: Error: EBUSY: resource busy or locked, write',
+  level: 'error',
+  timestamp: '2022-01-18T03:02:10.549Z' }
+{ message:
+   'Error at setup pin18: Error: EBUSY: resource busy or locked, write',
+  level: 'error',
+  timestamp: '2022-01-18T03:02:10.560Z' }
+{ message:
+   'Error at setup pin18: Error: EBUSY: resource busy or locked, write',
+  level: 'error',
+  timestamp: '2022-01-18T03:02:11.307Z' }
+{ message:
+   'Invalid password: client ip: ::ffff:192.168.1.1 - password: awakoy?1298',
+  level: 'error',
+  timestamp: '2022-01-26T02:31:49.111Z' }
+{ message:
+   'Invalid password: client ip: ::ffff:192.168.1.1 - password: Wakoy?2301',
+  level: 'error',
+  timestamp: '2022-01-26T02:32:01.239Z' }
+{ message:
+   'Invalid password: client ip: ::ffff:192.168.1.1 - password: Wakoy1298',
+  level: 'error',
+  timestamp: '2022-07-06T10:07:05.261Z' }
+{ message:
+   'Invalid password: client ip: ::ffff:49.224.230.76 - password: Wakoy?98',
+  level: 'error',
+  timestamp: '2022-08-29T22:45:37.036Z' }
+{ message:
+   'Invalid password: client ip: ::ffff:49.224.230.76 - password: Wakoy?1208',
+  level: 'error',
+  timestamp: '2022-08-29T22:45:45.923Z' }
+{ message:
+   "Error at setup pin18: Error: EACCES: permission denied, open '/sys/class/gpio/gpio24/value'",
+  level: 'error',
+  timestamp: '2022-08-29T22:46:54.222Z' }
+{ message:
+   "Error at setup pin18: Error: ENOENT: no such file or directory, open '/sys/class/gpio/gpio24/value'",
+  level: 'error',
+  timestamp: '2022-08-29T22:47:19.831Z' }
+{ message:
+   'Error at setup pin18: Error: EINVAL: invalid argument, write',
+  level: 'error',
+  timestamp: '2022-08-29T22:48:05.771Z' }
+{ message:
+   "Error at setup pin18: Error: ENOENT: no such file or directory, open '/sys/class/gpio/gpio24/value'",
+  level: 'error',
+  timestamp: '2022-08-29T22:48:24.551Z' }
+{ message:
+   'Invalid password: client ip: ::ffff:49.224.230.76 - password: awakoy?1298',
+  level: 'error',
+  timestamp: '2022-08-29T22:51:03.651Z' }
+{ message:
+   'Invalid password: client ip: ::ffff:49.224.230.76 - password: Wakou?1298',
+  level: 'error',
+  timestamp: '2022-08-29T22:51:15.836Z' }
+{ message:
+   "Error at setup pin18: Error: ENOENT: no such file or directory, open '/sys/class/gpio/gpio24/value'",
+  level: 'error',
+  timestamp: '2022-10-28T05:29:37.688Z' }
+{ message:
+   'Invalid password: client ip: ::ffff:49.224.236.82 - password: Wakiy?1298',
+  level: 'error',
+  timestamp: '2022-10-30T22:13:18.042Z' }
+{ message:
+   'Invalid password: client ip: ::ffff:192.168.1.1 - password: Waoy?1298',
+  level: 'error',
+  timestamp: '2022-12-17T20:58:20.007Z' }
+{ message:
+   "Error at setup pin18: Error: ENOENT: no such file or directory, open '/sys/class/gpio/gpio24/value'",
+  level: 'error',
+  timestamp: '2022-12-17T20:59:55.317Z' }
+{ message:
+   'Invalid password: client ip: ::ffff:192.168.1.1 - password: wakoy?1298',
+  level: 'error',
+  timestamp: '2022-12-22T21:32:03.598Z' }
+{ message:
+   'Invalid password: client ip: ::ffff:49.224.206.227 - password: Wakoy?2298',
+  level: 'error',
+  timestamp: '2022-12-22T22:51:34.379Z' }
+{ message:
+   'Invalid password: client ip: ::ffff:49.224.206.227 - password: Eakiy?1298',
+  level: 'error',
+  timestamp: '2022-12-22T22:51:45.293Z' }

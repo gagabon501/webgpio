@@ -26,53 +26,56 @@
     </div>
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
-    <script>
-      if (annyang) {
-        console.log("Annyang is working!")
-        document.getElementById("door_status").innerHTML = "Speech Command Allowed!"
-        const commands = {
-          'open garage' : function() {
-             const xhr = new XMLHttpRequest();
-             xhr.open("GET", "/operate", true);
-             xhr.onload = function () {
-               if (this.status == 200) {
-                 console.log("Door opened");
-                }
-              };
-              xhr.onerror = function () {
-                console.log("Request Error...");
-              };
-              xhr.send();
-          },
-          'close garage' : function() {
-             const xhr = new XMLHttpRequest();
-             xhr.open("GET", "/operate", true);
-             xhr.onload = function () {
-               if (this.status == 200) {
-                 console.log("Door opened");
-                }
-              };
-              xhr.onerror = function () {
-                console.log("Request Error...");
-              };
-              xhr.send();
-          },
-        }
-        //add commands to Annyang
-        annyang.addCommands(commands);
-
-        //start listening
-        annyang.start({autoRestart: true});
-
-      } else {
-        document.getElementById("door_status").innerHTML = "Speech Recognition Blocked!"
-      }
-    </script>
-    
+       
     <script>
       const interval = 1000;
 
+      loadAnnyang();
+
       setInterval(checkStatus, interval);
+
+      function loadAnnyang() {
+        
+        if (annyang) {
+          console.log("Annyang is working!")
+          document.getElementById("door_status").innerHTML = "Speech Command Allowed!"
+          const commands = {
+            'open *' : function() {
+              const xhr = new XMLHttpRequest();
+              xhr.open("GET", "/operate", true);
+              xhr.onload = function () {
+                if (this.status == 200) {
+                  console.log("Door opened");
+                  }
+                };
+                xhr.onerror = function () {
+                  console.log("Request Error...");
+                };
+                xhr.send();
+            },
+            'close *' : function() {
+              const xhr = new XMLHttpRequest();
+              xhr.open("GET", "/operate", true);
+              xhr.onload = function () {
+                if (this.status == 200) {
+                  console.log("Door opened");
+                  }
+                };
+                xhr.onerror = function () {
+                  console.log("Request Error...");
+                };
+                xhr.send();
+            },
+          }
+          //add commands to Annyang
+          annyang.addCommands(commands);
+          annyang.start({autoRestart: true, continuous: true});
+
+        } else {
+          document.getElementById("door_status").innerHTML = "Speech Recognition Blocked!"
+        }
+
+      }
 
       function checkStatus() {
         const xhr = new XMLHttpRequest();
