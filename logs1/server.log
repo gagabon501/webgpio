@@ -201,3 +201,11 @@
    'Invalid password: client ip: ::ffff:49.224.206.227 - password: Eakiy?1298',
   level: 'error',
   timestamp: '2022-12-22T22:51:45.293Z' }
+{ message:
+   "Error at setup pin18: Error: EACCES: permission denied, open '/sys/class/gpio/gpio24/value'",
+  level: 'error',
+  timestamp: '2023-01-04T22:10:19.149Z' }
+{ message:
+   'Server error: Cannot set headers after they are sent to the client',
+  level: 'error',
+  timestamp: '2023-01-04T22:12:54.201Z' }
